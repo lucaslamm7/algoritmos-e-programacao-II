@@ -8,6 +8,7 @@ public class atividade1 {
 
         String texto = new String();
         int cont = 0;
+        int cont2 = 0;
 
         System.out.println("Digite uma palavra");
         texto = ler.next();
@@ -22,6 +23,35 @@ public class atividade1 {
             }
         }
         System.out.println("A palavra tem "+cont+" vogais.");
+
+        if(texto.toLowerCase().startsWith("uni")){
+            System.out.println("A palavra comeca com 'UNI'");
+        }else{
+            System.out.println("Nao inicia com 'UNI'");
+        }
+        if(texto.toLowerCase().endsWith("rio")){
+            System.out.println("A palavra termina com 'RIO'");
+        }else{
+            System.out.println("Nao termina com 'RIO'");
+        }
+        for(int j=0; j<texto.length(); j++){
+            if(Character.isDigit(texto.charAt(j))){
+                cont2++;
+            }
+        }
+        System.out.println("A string tem "+cont2+" digitos");
+
+        StringBuilder textoInv = new StringBuilder();
+        for(int k=texto.length()-1; k>=0; k--){
+            textoInv.append(texto.charAt(k));
+        }
+
+        if(texto.equals(textoInv.toString())){
+            System.out.println("Eh um palindromo");
+        }else{
+            System.out.println("Nao eh um palindromo");
+        }
+
 
     }
 }
