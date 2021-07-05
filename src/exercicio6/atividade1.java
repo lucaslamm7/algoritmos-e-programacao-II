@@ -18,23 +18,22 @@ public class atividade1 {
 
         NovoNome = ler.nextLine();
 
-        if(nomes.contains(NovoNome)){
+        /*if(nomes.contains(NovoNome)){
             System.out.println("Este nome ja esta na lista!");
         }else{
             nomes.add(NovoNome);
             System.out.println(NovoNome + " foi adicionado na lista na " + nomes.indexOf(NovoNome) + " posicao!");
-        }
+        }*/
 
         while(NovoNome.length()!=0){
             if(nomes.contains(NovoNome)){
                 System.out.println("Este nome ja esta na lista!");
             }else{
                 nomes.add(NovoNome);
-                System.out.println(NovoNome + " foi adicionado na lista na " + nomes.indexOf(NovoNome) + " posicao!");
+                System.out.println(NovoNome + " foi adicionado na lista na " + (nomes.indexOf(NovoNome)+1)+ " posicao!");
             }
             System.out.println("Digite um nome para coloca-lo na lista ou não digite nada para parar de inserir.");
             NovoNome = ler.nextLine();
-            System.out.println(NovoNome);
         }
 
         for(int i=0; i < nomes.size(); i++){
