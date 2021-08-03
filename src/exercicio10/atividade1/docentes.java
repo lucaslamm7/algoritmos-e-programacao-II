@@ -4,7 +4,7 @@ public class docentes extends pessoas{
     int matriculaDocente;
     String materia;
 
-    public docentes(String nome, int idade, int matriculaDocente, String disciplina){
+    public docentes(String nome, int idade, int matriculaDocente, String materia){
         super(nome, idade);
         this.matriculaDocente = matriculaDocente;
         this.materia = materia;
