@@ -1,2 +1,6 @@
-package RevisaoProva;public class Onibus {
+package RevisaoProva;
+
+import java.util.ArrayList;
+
+public class Onibus extends Veiculo{
 }
